@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/animasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/shape6">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:text="@string/perhatian"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Laporkan bencana kapanpun dan dimanapun"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="-120dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/shape2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/laporan_bencana"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="23sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    android:background="@drawable/shape1"
+                    app:counterMaxLength="100">
+
+                    <EditText
+                        android:id="@+id/edt_nama_bencana"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:autofillHints="@string/nama_bencana_yang_terjadi"
+                        android:elegantTextHeight="true"
+                        android:ems="100"
+                        android:gravity="start"
+                        android:hint="@string/nama_bencana_yang_terjadi"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:justificationMode="inter_word"
+                        android:lines="1"
+                        android:maxLength="200"
+                        android:maxLines="1"
+                        android:scrollbars="vertical"
+                        android:textColorHighlight="#7cff88"
+                        android:textSize="17sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/keterangan"
+                    android:textStyle="bold"
+                    android:textSize="23sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    android:background="@drawable/shape1"
+                    app:counterMaxLength="1000">
+
+                    <EditText
+                        android:id="@+id/edt_deskripsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:autofillHints="@string/gambarang_umum_keadaan"
+                        android:elegantTextHeight="true"
+                        android:ems="1000"
+                        android:gravity="start"
+                        android:hint="@string/gambarang_umum_keadaan"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:justificationMode="inter_word"
+                        android:lines="3"
+                        android:maxLength="1000"
+                        android:maxLines="3"
+                        android:scrollX="@dimen/cardview_default_elevation"
+                        android:scrollbars="vertical"
+                        android:textColorHighlight="#7cff88"
+                        android:textSize="17sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/provinsi"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    android:background="@drawable/shape1"
+                    app:counterMaxLength="100">
+
+                    <EditText
+                        android:id="@+id/edt_provinsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:autofillHints="@string/nama_bencana_yang_terjadi"
+                        android:elegantTextHeight="true"
+                        android:ems="200"
+                        android:gravity="start"
+                        android:hint="@string/ketik_provinsi"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:justificationMode="inter_word"
+                        android:lines="1"
+                        android:maxLength="100"
+                        android:maxLines="1"
+                        android:scrollbars="vertical"
+                        android:textColorHighlight="#7cff88"
+                        android:textSize="17sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kota_kabupaten"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    android:background="@drawable/shape1"
+                    app:counterMaxLength="100">
+
+                    <EditText
+                        android:id="@+id/edt_kota"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:autofillHints="@string/nama_bencana_yang_terjadi"
+                        android:elegantTextHeight="true"
+                        android:ems="200"
+                        android:gravity="start"
+                        android:hint="@string/ketik_kota_kabupaten"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:justificationMode="inter_word"
+                        android:lines="1"
+                        android:maxLength="100"
+                        android:maxLines="1"
+                        android:scrollbars="vertical"
+                        android:textColorHighlight="#7cff88"
+                        android:textSize="17sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/kecamatan"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:counterEnabled="true"
+                    android:background="@drawable/shape1"
+                    app:counterMaxLength="100">
+
+                    <EditText
+                        android:id="@+id/edt_kecamatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:autofillHints="@string/nama_bencana_yang_terjadi"
+                        android:elegantTextHeight="true"
+                        android:ems="200"
+                        android:gravity="start"
+                        android:hint="@string/ketik_kecamatan"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:justificationMode="inter_word"
+                        android:lines="1"
+                        android:maxLength="100"
+                        android:maxLines="1"
+                        android:scrollbars="vertical"
+                        android:textColorHighlight="#7cff88"
+                        android:textSize="17sp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp">
+
+                    <Button
+                        android:id="@+id/chooseBtn"
+                        android:layout_width="130dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape3"
+                        android:text="@string/pilih_dari_penyimpanan"/>
+
+                    <Button
+                        android:id="@+id/camBtn"
+                        android:layout_width="130dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape3"
+                        android:text="@string/ambil_gambar" />
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/imageAnalitics"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_samapta_transparency_background" />
+
+                </androidx.cardview.widget.CardView>
+
+                <Button
+                    android:id="@+id/buttonProcess"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="@string/kirim_laporan"
+                    android:background="@drawable/shape3"
+                    android:layout_marginBottom="60dp"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

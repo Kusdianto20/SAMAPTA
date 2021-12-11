@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="Home"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_help"
+        android:icon="@drawable/ic_baseline_help_outline"
+        android:title="Bantuan"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_report"
+        android:title="Lapor"
+        android:icon="@drawable/ic_baseline_assignment"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_profil"
+        android:title="Profil"
+        android:icon="@drawable/ic_baseline_person"
+        app:showAsAction="always"/>
+
+</menu>
